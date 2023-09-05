@@ -1,12 +1,7 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+const userRoute = require("./src/routes/user.route");
+const app = express();
 
-app.get('/home', function (req, res) {
-  res.send('Home')
-})
+app.use("/soma", userRoute);
 
-app.get('/', function (req, res) {
-    res.send('Hello World')
-  })
-
-app.listen(3000)
+app.listen(3000);
