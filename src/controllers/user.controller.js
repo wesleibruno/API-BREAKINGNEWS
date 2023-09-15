@@ -9,7 +9,6 @@ const create = (req, res) => {
       name,
       username,
       email,
-      password,
       avatar,
       background,
     },
